@@ -2,36 +2,38 @@
   API REST with S.O.L.I.D Principle
 </h1>
 
-<p aling="center">
-  Project Pattern: <a href="https://www.youtube.com/watch?v=vAV4Vy4jfkc&t=2466s">Package by Feature</a>
+<p align="center">
+  Project Pattern <a href="https://www.youtube.com/watch?v=vAV4Vy4jfkc&t=2466s">Package by Feature</a>
 </p>
 
 
-# TRADUZIR PARA INGLÊS
+# TRADUÇÃO PARA INGLÊS (Em breve)
 
-# entities:
-  **Armazena o models(modelo) do banco de dados.**
+# Entities:
+> Camada responsável pelos models (modelo/formato) do banco de dados.
+---------------------------------------------------------------------------------------------------------
 
-# providers:
-  **Responsável por fazer comunicação com storages, serviços e APIs externas.** 
-  ## implementations:
-  **Onde ficará toda a implementação para a comunicação de com os storages, serviços ou APIs externas.**
-  
-# repositories:
-  **Responsável pelo formato do banco de dados...**
-  ## implementations:
-  **Responsável pela implementação do formato do banco de dados...**
+# Providers
+> Camada responsável por fazer comunicação com storages, serviços e API's externas.
+## implementations:
+> Camada responsável pela implementação da comunicação com storages, serviçoes e API's esternas.
 
+---------------------------------------------------------------------------------------------------------  
+# Repositories:
+> Camada responsável pelo forma de comunicação com banco de dados.
+## implementations:
+> Camda responsável pela implementação da forma de comunicação com banco de dados...
+
+---------------------------------------------------------------------------------------------------------
 # useCases:
-  **Responsável pela regra de negócio da aplicação<br />**
-  **Ou seja, toda ação que o usuário pode fazer na nossa aplicação**
-  ## CreateUserController:
-  **Responsável por receber as requisições (request), solicitadas ao backend**
-  ## CreateUserDTO:
-  **Os DTOs é o formato da requisição (request).**
-  ## CreateUserUseCase:
-  **Executa a logica e as regra de negócio do caso de uso (useCase)**
-  ## CreateUserUseCase.spec:
-  **Responsável por fazer os teste nossa lógica e regra de negócio**
-  ## index.ts
-  **Lida com toda a lógica e regra de negócio do caso de uso (useCase) e a executa.**
+> Camada responsável pela regra de negócio do caso de uso, Ou seja, toda ação que o usuário pode fazer na nossa aplicação requer um novo caso de uso/feature
+## CreateUserController:
+> Responsável por receber as requisições (request), solicitadas ao backend.
+## CreateUserDTO:
+> Os DTOs é responsável pelo formato dos dados da requisição (request) ao backend.
+## CreateUserUseCase:
+> Responsavel pela lógica e as regra de negócio do caso de uso (useCase).
+## CreateUserUseCase.spec:
+> Responsável por fazer os teste no nosso caso de uso.
+## index.ts
+> Executa a lógica e regra de negócio do caso de uso (useCase).
